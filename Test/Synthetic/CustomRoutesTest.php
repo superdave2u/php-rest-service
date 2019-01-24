@@ -42,7 +42,7 @@ class CustomRoutesTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('{
     "status": 400,
     "error": "RouteNotFoundException",
-    "message": "There is no route for \'login\'."
+    "message": "There is no route for requested resource."
 }', $response);
 
     }
