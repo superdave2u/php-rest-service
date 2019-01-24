@@ -802,7 +802,7 @@ class Server
                     $m = $this->fallbackMethod;
                     $this->send($this->controller->$m());
                 } else {
-                    return $this->sendBadRequest('RouteNotFoundException', "There is no route for '$uri'.");
+                    return $this->sendBadRequest('RouteNotFoundException', "There is no route for requested resource.");
                 }
             } else {
                 return false;
